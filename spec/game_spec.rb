@@ -13,4 +13,10 @@ describe Game do
       game.attack(player_2)
     end
   end
+
+  describe '#initialize' do
+    it 'game should accept two instances of player' do
+      expect(game).to receive(:player_1, :player_2)
+    end
+  end
 end
